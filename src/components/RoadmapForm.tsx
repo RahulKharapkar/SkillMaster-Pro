@@ -11,9 +11,9 @@ interface RoadmapFormProps {
 }
 
 const PROFICIENCY_OPTIONS = [
-  { value: 'rookie', label: 'Rookie' },
-  { value: 'beginner', label: 'Beginner' },
-  { value: 'intermediate', label: 'Intermediate' },
+  { value: 'rookie', label: 'Rookie - No Knowledge' },
+  { value: 'beginner', label: 'Beginner - Basic Understanding' },
+  { value: 'intermediate', label: 'Intermediate - Some Experience' },
 ];
 
 const RoadmapForm: React.FC<RoadmapFormProps> = ({ onSubmit, isLoading }) => {
