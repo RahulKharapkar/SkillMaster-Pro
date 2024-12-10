@@ -3,8 +3,9 @@ import { FormData, AIModel, APIResponse } from '../types';
 import { buildChatMessages } from '../utils/messageBuilder';
 import { CONFIG } from '../config/config';
 import { generateMockResponse } from './mockData';
+import { API_CONFIG } from './config';
 
-const API_URL = '/api/chat/completions';
+const API_URL = API_CONFIG.BASE_URL;
 
 export const generateRoadmap = async (
   formData: FormData,
